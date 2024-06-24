@@ -13,4 +13,5 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send('Hello! I am your new bot.')
 
-bot.run('')
+# always remove the token when pushing the code and enter when you have code locally
+bot.run('ENTER TOKEN HERE')
