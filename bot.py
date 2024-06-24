@@ -1,5 +1,10 @@
 import discord
+import os
 from discord.ext import commands
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -13,5 +18,5 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send('Hello! I am your new bot.')
 
-# always remove the token when pushing the code and enter when you have code locally
-bot.run('MTI1NDY4NTgyMDUzOTg5NTkzMQ.GbqqzC.vwk0d4OqTCu5M0SNOtQAKFCY_ItAf4PxWeY7N0')
+
+bot.run('TOKEN')
