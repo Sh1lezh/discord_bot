@@ -19,4 +19,4 @@ async def hello(ctx):
     await ctx.send('Hello! I am your new bot.')
 
 
-bot.run('TOKEN')
+bot.run(TOKEN)
